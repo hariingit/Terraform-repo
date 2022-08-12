@@ -38,7 +38,7 @@ resource "aws_subnet" "public_subnet_1a" {
     cidr_block = "10.0.1.0/24"
     
     tags = {
-    Name = "terraform"
+    Name = "public_subnet_1a"
 }
 }
 
@@ -47,7 +47,7 @@ resource "aws_subnet" "public_subnet_1b" {
     cidr_block = "10.0.2.0/24"
 
     tags = {
-    Name = "terraform"
+    Name = "public_subnet_1b"
 }
 }
 
@@ -56,7 +56,7 @@ resource "aws_subnet" "private_subnet1a" {
     cidr_block = "10.0.3.0/24"
 
     tags = {
-    Name = "terraform"
+    Name = "private_subnet1a"
 }
 }
 resource "aws_subnet" "private_subnet1b" {
@@ -64,6 +64,6 @@ resource "aws_subnet" "private_subnet1b" {
     cidr_block = "10.0.4.0/24"
 
     tags = {
-      "Name" = "terraform"
+      "Name" = "private_subnet1b"
     }
 }
